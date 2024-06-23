@@ -1,0 +1,234 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.topSection {
+  width: 100%;
+  height: 100vh;
+  background: rgb(250, 242, 239);
+  background: linear-gradient(
+    141deg,
+    rgba(250, 242, 239, 1) 0%,
+    rgba(2, 48, 71, 1) 92%
+  );
+}
+.headerSection {
+  width: 100%;
+  height: 80px;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoSection {
+  width: 50%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.logoSection p {
+  font-size: 30px;
+  font-weight: bold;
+}
+.linkSection {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.linkUnit{
+  padding:10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.linkUnit p{
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #023047;
+}
+.linkUnit p:hover{
+  color: #fb8500;
+}
+.linkUnit button{
+  padding:10px 20px;
+  background: transparent;
+  border:1px solid #023047;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #023047;
+  cursor: pointer;
+}
+.linkUnit button:hover{
+  border:1px solid #fb8500;
+  background: #fb8500;
+  color: #023047;
+}
+.linkUnit img{
+  width:20px;
+  height:20px;
+  cursor: pointer;
+}
+
+.mainLanding{
+  width:100%;
+  padding:20px 30px;
+  height:calc(100% - 80px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.landingText{
+  width:50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.landingTextdiv{
+  width:100%;
+}
+.landingTextdiv p,span{
+  font-size: 45px;
+  font-weight: bold;
+}
+.landingImage{
+  width:50%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.landingImage img{
+  width:100%;
+  height:auto;
+}
+@media screen and (max-width:1024px) {
+  .headerSection{
+    padding: 5px 10px;
+  }
+  .webLink{
+    display: none;
+  }
+  .mainLanding{
+    padding:10px;
+    display: block;
+  }
+  .landingText{
+    width:100%
+  }
+  .landingTextdiv p,span{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .landingImage{
+    width:100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.categorySelect{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin:20px 0px;
+}
+.categorySelectUnit{
+  padding:10px;
+  width:15%;
+  background: #023047;
+  border:1px solid #023047;
+  border-radius: 15px;
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+  color:#faf2ef;
+}
+.categorySelectUnit p{
+  font-size: 22px;
+  font-weight: 300;
+}
+
+
+.category{
+  width:100%;
+  margin:30px 0px;
+  padding:0px 30px;
+}
+.categoryTitle{
+  width:100%;
+  text-align: center;
+  margin-bottom: 50px;
+  
+}
+.categoryTitle p,span{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.categoryCardSection{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between
+}
+
+.sectionHeader{
+  width: 100%;
+}
+.sectionTitle{
+  width:100;
+  text-align: center;
+}
+.sectionTitle p{
+  font-size: 30px;
+  font-weight: bold;
+  color: #fb8500;
+}
+.sectionDescription{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sectionDescription p{
+  font-size: 16px;
+  font-weight: bold;
+  color: #023047;
+}
+
+.actionDiv{
+  width:90%;
+  border-radius: 10px;
+  height:400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: rgb(250, 242, 239);
+  background: linear-gradient(
+    141deg,
+    rgba(250, 242, 239, 1) 0%,
+    rgba(2, 48, 71, 1) 92%
+  );
+}
+.actionUnit{
+  width:100%;
+  text-align: center;
+}
+.actionUnit p{
+  font-size: 40px;
+  font-weight: bold;
+  color:#faf2ef;
+}

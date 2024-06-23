@@ -1,0 +1,117 @@
+
+.categoryCards{
+    width:22%;
+    height:400px;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #023047;
+    background-color: #023047;
+  }
+  @media screen and (max-width:1024px) {
+    .categoryCards{
+      width:96%;
+      margin-bottom: 30px;
+    }
+  }
+  .categoryPics{
+    width:100%;
+    height:200px;
+    box-shadow: 0 0 5px #023047;
+    border-radius: 10px;
+  }
+  .categoryPics img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+  }
+  .cardName{
+    width:100%;
+    margin:10px 0px;
+  }
+  .cardName p{
+    font-size: 24px;
+    font-weight: bold;
+    color:#faf2ef;
+  }
+  .cardPrice{
+    width:100%;
+    height:30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .actualPrice{
+    width:auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 15px;
+  }
+  .actualPrice img{
+    width:15px;
+    height:15px;
+  }
+  .actualPrice p{
+    font-size: 22px;
+    color:#fb8500;
+  }
+  .originalPrice{
+    width:auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 15px;
+    text-decoration: line-through;
+  }
+  .originalPrice img{
+    width:13px;
+    height:13px;
+  }
+  .originalPrice p{
+    font-size: 14px;
+    color:#faf2ef;
+  }
+  .discountTag{
+    width:25%
+  }
+  .discountTag{
+    width:auto;
+    background-color: #30bced;
+    border-radius: 20px;
+  }
+  .cardExclusive{
+    width:100%;
+    margin-bottom: 20px;
+  }
+  .cardExclusive p{
+    color: #faf2ef;
+  }
+  .cardButtons{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .cardButtons button{
+    width:45%;
+    padding:8px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color:#023047;
+    box-shadow: 0 0 3px #faf2ef;
+    border-radius: 20px;
+    border:none;
+    cursor: pointer;
+  }
+  .cardButtons button img{
+    height:14px;
+    width:14px;
+    margin-right: 2px;
+  }
+  .cardButtons button p{
+    font-size: 15px;
+    color: #faf2ef;
+  }

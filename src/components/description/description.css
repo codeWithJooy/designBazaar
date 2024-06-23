@@ -1,0 +1,48 @@
+.descriptionCard {
+  width: 100%;
+  padding: 30px 30px;
+  background-color: #023047;
+  margin: 0px 0px;
+}
+.descriptionTitle p {
+  font-size: 45px;
+  font-weight: bold;
+  color: #faf2ef;
+}
+.descriptionDes {
+  width: 100%;
+  margin: 15px 0px;
+}
+.descriptionDes p {
+  font-size: 16px;
+  color: #faf2ef;
+  line-height: 1.4;
+}
+.descBenefit {
+  width: 100%;
+  margin-top: 40px;
+}
+.descBenefitTitle p {
+  font-size: 45px;
+  font-weight: bold;
+  color: #faf2ef;
+}
+.descBenefitUnit {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #faf2ef;
+  border-radius: 20px;
+  margin:5px 0px 10px;
+}
+.benefitTitle{
+    margin-bottom: 10px;
+}
+.benefitTitle p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fb8500;
+}
+.benefitDesc {
+  font-size: 16px;
+  color: #faf2ef;
+}

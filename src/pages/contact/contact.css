@@ -1,0 +1,163 @@
+.contactSection{
+    width:100%;
+    min-height: 100vh;
+    background: rgb(250, 242, 239);
+  background: linear-gradient(
+    141deg,
+    rgba(250, 242, 239, 1) 0%,
+    rgba(2, 48, 71, 1) 92%
+  );
+  padding-bottom: 40px;
+}
+.contactHeader{
+    width:100%;
+    margin: 20px 0px 40px;
+    padding:0px 30px;
+}
+.contactTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactTitle p{
+    font-size: 40px;
+    font-weight: bold;
+    color:#023047;
+}
+.contactDescription{
+    width:100%;
+    margin-top: 10px;
+    text-align: center;
+}
+.contactDescription p{
+    font-size: 16px;
+    font-weight: bold;
+    color:#023047;
+}
+.contactMain{
+    width:100%;
+    padding:0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactTexts{
+    width:50%;
+}
+.textUnit{
+    width:80%;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #faf2ef;
+}
+.textImage{
+    width:8%;
+}
+.textMain{
+    width:92%;
+}
+.textTitle{
+    width:100%;
+    margin-bottom: 5px;
+}
+.textTitle p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #023047;
+}
+.textDesc{
+    width:100%;
+    margin-bottom: 15px;
+}
+.textDesc p{
+    font-size: 14px;
+    color: #faf2ef;
+}
+.textLink{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.textLink p{
+    color: #023047;
+}
+.textLink img{
+    width:15px;
+    height:15px;
+    margin-left: 10px;
+}
+
+.contactFormSection{
+    width:40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.contactForm{
+    width:100%;
+    min-height:400px;
+    box-shadow: 0 0 5px #faf2ef;
+    border-radius: 20px;
+    padding:10px 20px;
+}
+.formHeader{
+    width:100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.formHeader p{
+    font-size: 20px;
+    font-weight: bold;
+    color:#faf2ef;
+}
+.formInput{
+    width:100%;
+    margin:5px 0px 15px;
+}
+.formInput input{
+    width:100%;
+    border:none;
+    background: #023047;
+    border-radius: 10px;
+    outline: none;
+    padding:12px 20px;
+    color: #faf2ef;
+}
+input::placeholder {
+    color:#faf2ef; /* Your desired color */
+}
+input:focus::placeholder {
+    color: transparent; /* Make the placeholder text transparent */
+}
+.formInput textarea{
+    width:100%;
+    height:100px;
+    border:none;
+    background: #023047;
+    border-radius: 10px;
+    outline: none;
+    padding:12px 20px;
+    color: #faf2ef;
+}
+textarea::placeholder {
+    color:#faf2ef; /* Your desired color */
+}
+textarea:focus::placeholder {
+    color: transparent; /* Make the placeholder text transparent */
+}
+.formInput button{
+    width:100%;
+    padding:12px 20px;
+    background: #fb8500;
+    border: 1px solid #fb8500;
+    color: #023047;
+    border-radius: 10px;
+    outline: none;
+    font-weight: bold;
+}

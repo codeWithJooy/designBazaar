@@ -1,0 +1,37 @@
+.categorySelect{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin:20px 0px;
+  }
+  .categorySelectUnit{
+    padding:10px;
+    width:15%;
+    background: #023047;
+    border:1px solid #023047;
+    border-radius: 15px;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+    color:#faf2ef;
+  }
+  .categorySelectUnit p{
+    font-size: 22px;
+    font-weight: 300;
+  }
+  @media screen and (max-width:1024px) {
+    .categorySelect{
+      width:100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      margin:20px 0px;
+    }
+    .categorySelectUnit{
+     width: 40%;
+    }
+   
+  }

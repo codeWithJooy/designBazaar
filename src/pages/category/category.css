@@ -1,0 +1,111 @@
+.categoryHeader{
+    width:100%;
+    min-height: 100vh;
+    background: rgb(250, 242, 239);
+  background: linear-gradient(
+    141deg,
+    rgba(250, 242, 239, 1) 0%,
+    rgba(2, 48, 71, 1) 92%
+  );
+  padding-bottom: 40px;
+}
+.categoryMain{
+    width:100%;
+    min-height:calc(100vh - 60px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding:10px 30px;
+}
+.categoryPageText{
+    width:50%;
+    padding-right: 40px;
+    padding-left: 15px;
+}
+.categoryPageTag{
+    width:100%;
+}
+.categoryPageTag p{
+    font-size: 22px;
+    font-weight: bold;
+    color:#023047;
+}
+.categoryPageHeader p,span{
+    font-size: 60px;
+    font-weight: bold;
+    color:#faf2ef;
+}
+.categoryPageDesc{
+    width:80%;
+    padding:10px 40px 10px 0px;
+}
+.categoryPageDesc p{
+    font-size: 16px;
+    line-height: 1.4;
+}
+.categoryPageButton{
+    width:100%;
+    margin-top: 20px;
+}
+.categoryPageButton button{
+    padding:12px 40px;
+    background: #023047;
+    border:1px solid #023047;
+    border-radius: 15px;
+    color:#faf2ef;
+    font-weight: bold;
+}
+.categoryPageImages{
+    width:50%;
+    padding:30px;
+}
+.categoryPageImages img{
+    width: 100%;
+    height:100%;
+}
+.categoryCardsHolder{
+    width:100%;
+    padding:30px;
+}
+.categoryCardsHeader{
+    width:100%;
+    text-align: center;
+}
+.categoryCardsHeader p{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 10px 0px 30px;
+    color: #fb8500;
+}
+@media screen and (max-width:1024px) {
+    .categoryMain{
+        padding:10px 15px;
+    }
+    .categoryPageText{
+        width:100%;
+        padding: 0px;
+    }
+    .categoryPageTag p{
+        font-size: 16px;
+        font-weight: bold;
+        color:#023047;
+    }
+    .categoryPageHeader p,span{
+        font-size: 40px;
+        font-weight: bold;
+        color:#faf2ef;
+    }
+    .categoryPageDesc{
+        width:100%;
+        padding:10px;
+        margin-top: 20px;
+    }
+    .categoryPageDesc p{
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .categoryPageImages{
+        width: 100%;
+    }
+}

@@ -1,0 +1,30 @@
+export const category=[
+    {
+        title:"Jason",
+        img:"Assets/common/website.webp",
+        actual:500,
+        original:5000,
+        discount:90,
+    },
+    {
+        title:"Jason",
+        img:"Assets/common/website.webp",
+        actual:500,
+        original:5000,
+        discount:90,
+    },
+    {
+        title:"Jason",
+        img:"Assets/common/website.webp",
+        actual:500,
+        original:5000,
+        discount:90,
+    },
+    {
+        title:"Jason",
+        img:"Assets/common/website.webp",
+        actual:500,
+        original:5000,
+        discount:90,
+    },
+]
