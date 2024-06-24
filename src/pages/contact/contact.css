@@ -38,6 +38,7 @@
     width:100%;
     padding:0px 30px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -160,4 +161,19 @@ textarea:focus::placeholder {
     border-radius: 10px;
     outline: none;
     font-weight: bold;
+}
+@media screen and (max-width:1024px) {
+    .contactTexts{
+       width:100%;
+    }
+    .textUnit{
+        width:100%
+    }
+    .contactFormSection{
+        width:100%;
+        padding: 10px;
+    }
+    .contactForm{
+        padding:10px;
+    }
 }
