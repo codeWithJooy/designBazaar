@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./home.css";
 import CategoryCard from "../../components/categoryCards/CategoryCard";
 import { category } from "../../data/category";
@@ -9,41 +9,57 @@ import Header from "../../components/header/Header";
 import Need from "../../components/need/Need";
 import How from "../../components/how/How";
 import Tags from "../../components/tags/Tags";
+import Login from "../../components/gettingStarted/Login";
+import GettingStarted from "../../components/gettingStarted/GettingStarted";
+
+
 const Home = () => {
+  const [model,setModel]=useState(false)
   return (
     <div className="main">
       <div className="topSection">
-        <Header />
-        <div className="mainLanding">
-          <div className="landingText">
-            <div className="landingTextdiv">
-              <p>Build your <span style={{color:"#fb8500"}}>Portfolio</span></p>
+        <Header setModel={setModel}/>
+        <div className="categoryMain">
+          <div className="categoryPageText">
+            <div className="categoryPageTag">
+              <p>Designer Portfolios</p>
             </div>
-            <div className="landingTextdiv">
-              <p>Website Using your </p>
+            <div className="categoryPageHeader">
+              <p>
+              Build Your <span style={{ color: "#fb8500" }}>Portfolio</span></p>
+              <p>
+              Website Using our
+              </p>
+              <p style={{ color: "#fb8500" }}>AI-powered CMS</p>
             </div>
-            <div className="landingTextdiv">
-              <p>phone with our </p>
+            <div className="categoryPageDesc">
+              <p>
+                Effortlessly build and update your portfolio website from your
+                phone, as easily as posting on social media, without any coding
+                knowledge, all using our AI-powered CMS. Explore numerous
+                portfolio options for a truly customizable experience.
+              </p>
             </div>
-            <div className="landingTextdiv">
-              <p style={{color:"#fb8500"}} >Ai-powered cms</p>
+            <div className="categoryPageButton">
+              <button>Get Started</button>
             </div>
           </div>
-          <div className="landingImage">
-            <img src="Assets/common/device.png" />
+          <div className="categoryPageImages">
+            <img src="Assets/photographer/collage.jpg" />
           </div>
         </div>
       </div>
-<Tags />
+      <Tags />
       <div className="category">
         <div className="categoryTitle">
-          <p>ECommerce <span style={{color:"#fb8500"}}>Designs</span></p>
+          <p>
+            ECommerce <span style={{ color: "#fb8500" }}>Designs</span>
+          </p>
         </div>
         <div className="categoryCardSection">
-           {
-            category &&
-            category.map((data,key)=>(
-              <CategoryCard 
+          {category &&
+            category.map((data, key) => (
+              <CategoryCard
                 key={key}
                 title={data.title}
                 actual={data.actual}
@@ -51,19 +67,19 @@ const Home = () => {
                 discount={data.discount}
                 img={data.img}
               />
-            ))
-           }
+            ))}
         </div>
       </div>
       <div className="category">
         <div className="categoryTitle">
-          <p>Developers <span style={{color:"#fb8500"}}>Designs</span></p>
+          <p>
+            Developers <span style={{ color: "#fb8500" }}>Designs</span>
+          </p>
         </div>
         <div className="categoryCardSection">
-           {
-            category &&
-            category.map((data,key)=>(
-              <CategoryCard 
+          {category &&
+            category.map((data, key) => (
+              <CategoryCard
                 key={key}
                 title={data.title}
                 actual={data.actual}
@@ -71,19 +87,19 @@ const Home = () => {
                 discount={data.discount}
                 img={data.img}
               />
-            ))
-           }
+            ))}
         </div>
       </div>
       <div className="category">
         <div className="categoryTitle">
-          <p>Artist <span style={{color:"#fb8500"}}>Designs</span></p>
+          <p>
+            Artist <span style={{ color: "#fb8500" }}>Designs</span>
+          </p>
         </div>
         <div className="categoryCardSection">
-           {
-            category &&
-            category.map((data,key)=>(
-              <CategoryCard 
+          {category &&
+            category.map((data, key) => (
+              <CategoryCard
                 key={key}
                 title={data.title}
                 actual={data.actual}
@@ -91,19 +107,19 @@ const Home = () => {
                 discount={data.discount}
                 img={data.img}
               />
-            ))
-           }
+            ))}
         </div>
       </div>
       <div className="category">
         <div className="categoryTitle">
-          <p>Designer <span style={{color:"#fb8500"}}>Designs</span></p>
+          <p>
+            Designer <span style={{ color: "#fb8500" }}>Designs</span>
+          </p>
         </div>
         <div className="categoryCardSection">
-           {
-            category &&
-            category.map((data,key)=>(
-              <CategoryCard 
+          {category &&
+            category.map((data, key) => (
+              <CategoryCard
                 key={key}
                 title={data.title}
                 actual={data.actual}
@@ -111,19 +127,19 @@ const Home = () => {
                 discount={data.discount}
                 img={data.img}
               />
-            ))
-           }
+            ))}
         </div>
       </div>
       <div className="category">
         <div className="categoryTitle">
-          <p>Photographer <span style={{color:"#fb8500"}}>Designs</span></p>
+          <p>
+            Photographer <span style={{ color: "#fb8500" }}>Designs</span>
+          </p>
         </div>
         <div className="categoryCardSection">
-           {
-            category &&
-            category.map((data,key)=>(
-              <CategoryCard 
+          {category &&
+            category.map((data, key) => (
+              <CategoryCard
                 key={key}
                 title={data.title}
                 actual={data.actual}
@@ -131,15 +147,18 @@ const Home = () => {
                 discount={data.discount}
                 img={data.img}
               />
-            ))
-           }
+            ))}
         </div>
       </div>
       <Need />
       <Faq />
       <How />
-      
+
       <Footer />
+      {
+        model && <GettingStarted setModel={setModel}/>
+      }
+      
     </div>
   );
 };

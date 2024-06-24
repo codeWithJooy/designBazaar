@@ -1,11 +1,14 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
-const Header=()=>{
+const Header=({setModel})=>{
   const history=useHistory()
   const handleHome=()=>{
     history.push("/home")
   }  
+  const openModel=()=>{
+    setModel(true)
+  }
   return( 
         <div className="headerSection">
           <div className="logoSection" onClick={handleHome}>
@@ -26,7 +29,7 @@ const Header=()=>{
               <p>FAQs</p>
             </div>
             <div className="linkUnit webLink">
-              <button>Login</button>
+              <button onClick={openModel}>Login</button>
             </div>
             <div className="linkUnit">
               <img src="Assets/common/ham.png" />

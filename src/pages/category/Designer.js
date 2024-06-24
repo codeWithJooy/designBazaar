@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./category.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
@@ -7,11 +7,14 @@ import { developerDescription } from "../../data/description";
 import Tags from "../../components/tags/Tags";
 import CategoryCard from "../../components/categoryCards/CategoryCard";
 import { category } from "../../data/category";
+import GettingStarted from "../../components/gettingStarted/GettingStarted";
+
 const Designer = () => {
+  const [model,setModel]=useState(false)
   return (
     <div className="main">
       <div className="categoryHeader">
-        <Header />
+      <Header setModel={setModel}/>
         <div className="categoryMain">
           <div className="categoryPageText">
             <div className="categoryPageTag">
@@ -61,6 +64,9 @@ const Designer = () => {
       </div>
       <Description data={developerDescription} />
       <Footer />
+      {
+        model && <GettingStarted setModel={setModel}/>
+      }
     </div>
   );
 };

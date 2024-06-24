@@ -1,15 +1,18 @@
-import React from "react";
+import React,{useState} from "react";
 import Header from "../../components/header/Header";
 import { contactText } from "../../data/contactTextUnits";
 import "./contact.css";
 import Footer from "../../components/footer/Footer";
 import ContactTextUnit from "./ContactTextUnit";
+import GettingStarted from "../../components/gettingStarted/GettingStarted";
+
 
 const Contact = () => {
+  const [model,setModel]=useState(false)
   return (
     <div className="main">
       <div className="contactSection">
-        <Header />
+      <Header setModel={setModel}/>
         <div className="contactHeader">
           <div className="contactTitle">
             <p>Contact</p>
@@ -61,6 +64,9 @@ const Contact = () => {
         </div>
       </div>
       <Footer />
+      {
+        model && <GettingStarted setModel={setModel}/>
+      }
     </div>
   );
 };
