@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import { useHistory } from "react-router-dom";
 import "./home.css";
 import CategoryCard from "../../components/categoryCards/CategoryCard";
 import { category } from "../../data/category";
@@ -15,6 +16,11 @@ import GettingStarted from "../../components/gettingStarted/GettingStarted";
 
 const Home = () => {
   const [model,setModel]=useState(false)
+  const history=useHistory()
+
+  const handleStarted=()=>{
+    history.push("/contact")
+  }
   return (
     <div className="main">
       <div className="topSection">
@@ -41,7 +47,7 @@ const Home = () => {
               </p>
             </div>
             <div className="categoryPageButton">
-              <button>Get Started</button>
+              <button onClick={handleStarted} >Get Started</button>
             </div>
           </div>
           <div className="categoryPageImages">

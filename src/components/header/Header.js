@@ -95,7 +95,7 @@ const Header = ({ setModel }) => {
         <div className="mobLinkUnit" onClick={handleDesigner}>
           <p>Designer PortFoios</p>
         </div>
-        <div className="mobLinkUnit" oonClick={handleDeveloper}>
+        <div className="mobLinkUnit" onClick={handleDeveloper}>
           <p>Developer PortFoios</p>
         </div>
         <div className="mobLinkUnit" onClick={handlePhotographer}>
