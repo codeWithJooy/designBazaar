@@ -19,7 +19,7 @@ const CategoryCard = ({title,actual,original,discount,img}) => {
           <img src="Assets/common/rupeeWhite.png" />
           <p>{original}/yr</p>
         </div>
-        <div className="discountTag">{discount}% off</div>
+        <div className="discountTag"><p>{discount}% off</p></div>
       </div>
       <div className="cardExclusive">
         <p>( Exclusive Deal )</p>

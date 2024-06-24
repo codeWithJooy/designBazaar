@@ -1,14 +1,14 @@
 import React from "react";
 import "./need.css"
 
-const NeedUnit=()=>{
+const NeedUnit=({val})=>{
     return(
         <div className="needUnit">
         <div className="needUnitTitle">
-            <p>Professional Image</p>
+            <p>{val.title}</p>
         </div>
         <div className="needUnitDescription">
-            <p>A well-curated portfolio enhances your professional image, signaling a commitment to quality and excellence in your field.</p>
+            <p>{val.description}</p>
         </div>
       </div>
     )

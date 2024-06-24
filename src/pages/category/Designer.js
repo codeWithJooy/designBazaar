@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import { useHistory } from "react-router-dom";
 import "./category.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
@@ -11,6 +12,11 @@ import GettingStarted from "../../components/gettingStarted/GettingStarted";
 
 const Designer = () => {
   const [model,setModel]=useState(false)
+  const history=useHistory()
+
+  const handleStarted=()=>{
+    history.push("/contact")
+  }
   return (
     <div className="main">
       <div className="categoryHeader">
@@ -18,7 +24,7 @@ const Designer = () => {
         <div className="categoryMain">
           <div className="categoryPageText">
             <div className="categoryPageTag">
-              <p>Designer Portfolios</p>
+              <p>Designer Portfolio</p>
             </div>
             <div className="categoryPageHeader">
               <p>Stand Out with a</p>
@@ -35,7 +41,7 @@ const Designer = () => {
               </p>
             </div>
             <div className="categoryPageButton">
-              <button>Get Started</button>
+              <button onClick={handleStarted}>Get Started</button>
             </div>
           </div>
           <div className="categoryPageImages">
@@ -46,7 +52,7 @@ const Designer = () => {
       <Tags />
       <div className="categoryCardsHolder">
         <div className="categoryCardsHeader">
-          <p>Portfolio Websites For Designers</p>
+          <p>Portfolio Websites For Designer</p>
         </div>
         <div className="categoryCardSection">
           {category &&

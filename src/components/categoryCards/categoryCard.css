@@ -6,6 +6,7 @@
     border-radius: 10px;
     box-shadow: 0 0 5px #023047;
     background-color: #023047;
+    margin-bottom: 30px;
   }
   @media screen and (max-width:1024px) {
     .categoryCards{
@@ -73,12 +74,15 @@
     color:#faf2ef;
   }
   .discountTag{
-    width:25%
-  }
-  .discountTag{
     width:auto;
-    background-color: #30bced;
+    padding:5px 10px;
+    background-color: #fb8500;
+    color: #023047;
     border-radius: 20px;
+  }
+  .discountTag p{
+    font-size: 13px;
+    font-weight: bold;
   }
   .cardExclusive{
     width:100%;

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./category.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
@@ -11,6 +12,11 @@ import GettingStarted from "../../components/gettingStarted/GettingStarted";
 
 const Artist = () => {
   const [model, setModel] = useState(false);
+  const history=useHistory()
+
+  const handleStarted=()=>{
+    history.push("/contact")
+  }
   return (
     <div className="main">
       <div className="categoryHeader">
@@ -18,12 +24,12 @@ const Artist = () => {
         <div className="categoryMain">
           <div className="categoryPageText">
             <div className="categoryPageTag">
-              <p>Developer Portfolios</p>
+              <p>Artist Portfolios</p>
             </div>
             <div className="categoryPageHeader">
               <p>Stand Out with a</p>
               <p>
-                Unique <span style={{ color: "#fb8500" }}>Developer</span>
+                Unique <span style={{ color: "#fb8500" }}>Artist</span>
               </p>
               <p>Portfolio</p>
             </div>
@@ -35,18 +41,18 @@ const Artist = () => {
               </p>
             </div>
             <div className="categoryPageButton">
-              <button>Get Started</button>
+              <button onClick={handleStarted}>Get Started</button>
             </div>
           </div>
           <div className="categoryPageImages">
-            <img src="Assets/photographer/collage.jpg" />
+            <img src="Assets/artist/collage.jpg" />
           </div>
         </div>
       </div>
       <Tags />
       <div className="categoryCardsHolder">
         <div className="categoryCardsHeader">
-          <p>Portfolio Websites For Developer</p>
+          <p>Portfolio Websites For Artists</p>
         </div>
         <div className="categoryCardSection">
           {category &&

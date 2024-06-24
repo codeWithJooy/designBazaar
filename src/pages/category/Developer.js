@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import { useHistory } from "react-router-dom";
 import "./category.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
@@ -11,6 +12,10 @@ import GettingStarted from "../../components/gettingStarted/GettingStarted";
 
 const Developer = () => {
   const [model,setModel]=useState(false)
+  const history=useHistory()
+  const handleStarted=()=>{
+    history.push("/contact")
+  }
   return (
     <div className="main">
       <div className="categoryHeader">
@@ -35,7 +40,7 @@ const Developer = () => {
               </p>
             </div>
             <div className="categoryPageButton">
-              <button>Get Started</button>
+              <button onClick={handleStarted} >Get Started</button>
             </div>
           </div>
           <div className="categoryPageImages">
